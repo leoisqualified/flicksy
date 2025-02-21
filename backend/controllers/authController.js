@@ -1,8 +1,8 @@
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const User = require("../models/User");
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+import User from "../models/User.js";
 
-const register = async (req, res) => {
+export const register = async (req, res) => {
   const { username, email, password } = req.body;
 
   try {
@@ -33,7 +33,7 @@ const register = async (req, res) => {
   }
 };
 
-const login = async (req, res) => {
+export const login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -61,5 +61,3 @@ const login = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
-
-module.exports = { register, login };

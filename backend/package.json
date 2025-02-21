@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leoisqualified/flicksy.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "fuckboyandy",
   "license": "ISC",
   "type": "module",
   "bugs": {
